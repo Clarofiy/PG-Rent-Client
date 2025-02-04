@@ -7,12 +7,12 @@ import { Auth0Provider } from "@auth0/auth0-react";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Auth0Provider
-     domain="dev-ci316dunlgjp6u4c.us.auth0.com"
-     clientId="l4ZO4CwIkOJYH6pfiiIelmn9r4uU7u2N"
+     domain="dev-idoc54yf27im01ku.us.auth0.com"
+     clientId="RtYCJin60TvyEzcvUrJnNZskyXD45nNK"
      authorizationParams={{
-      redirect_uri: "http://localhost:5173"
+      redirect_uri: "https://pg-rent-client.vercel.app"
      }}
-     audience="http://localhost:8000"
+     audience="https://vercel.com/clarofiys-projects/pg-rent-server"
      scope="openid profile email"
     >
       <App />
