@@ -8,6 +8,8 @@ const useProperties = () => {
     getAllProperties,
     { refetchOnWindowFocus: false }
   );
+  console.log(data);
+  
 
   return {
     data,
