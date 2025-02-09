@@ -12,7 +12,7 @@ const BasicDetails = ({ prevStep, nextStep, propertyDetails, setPropertyDetails 
     },
     validate: {
       title: (value) => validateString(value),
-      description: (value) => validateString(value),
+      // description: (value) => validateString(value),
       price: (value) =>
           value < 1 ? "Must be greater than 1 rupees" : null,
     },
@@ -43,7 +43,7 @@ const BasicDetails = ({ prevStep, nextStep, propertyDetails, setPropertyDetails 
         <Textarea
           placeholder="Description"
           label="Description"
-          withAsterisk
+          // withAsterisk
           {...form.getInputProps("description")}
         />
         <NumberInput

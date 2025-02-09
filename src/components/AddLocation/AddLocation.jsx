@@ -77,9 +77,9 @@ const AddLocation = ({ propertyDetails, setPropertyDetails, nextStep }) => {
 
         {/* right side */}
 
-        <div style={{ flex: 1 }}>
+        {/* <div style={{ flex: 1 }}>
           <Map address={address} city={city} country={country} />
-        </div>
+        </div> */}
       </div>
 
       <Group position="center" mt={"xl"}>

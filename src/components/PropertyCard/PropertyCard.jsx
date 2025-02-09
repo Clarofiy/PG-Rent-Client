@@ -11,7 +11,7 @@ const PropertyCard = ({ card }) => {
       className="flexColStart r-card"
       onClick={() => navigate(`../properties/${card.id}`)}
     >
-      <Heart id={card?.id} />
+      {/* <Heart id={card?.id} /> */}
       <img src={card.image} alt="home" />
       <span className="secondaryText r-price">
         <span style={{ color: "orange" }}>₹</span>

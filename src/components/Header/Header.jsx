@@ -28,6 +28,7 @@ const Header = () => {
         {/* logo */}
         <Link to="/">
           {/* <img src="./logo.png" alt="logo" width={100} /> */}
+          <h1>Clarofiy</h1>
         </Link>
 
         {/* menu */}
@@ -43,10 +44,15 @@ const Header = () => {
           >
             <NavLink to="/properties">Properties</NavLink>
 
-            <a href="mailto:zainkeepscode@gmail.com">Contact</a>
+            <a href="mailto:clarofiy857@gmail.com">Contact</a>
 
             {/* add property */}
-            <div onClick={handleAddPropertyClick}>Add Property</div>
+
+            {user?.email === "prajwalgadge9899@gmail.com" ||
+              (user?.email === "clarofiy857@gmail.com" && (
+                <div onClick={handleAddPropertyClick}>Add Property</div>
+              ))}
+
             <AddPropertyModal opened={modalOpened} setOpened={setModalOpened} />
             {/* login button */}
             {!isAuthenticated ? (

@@ -2,7 +2,8 @@ import React from "react";
 import "./Contact.css";
 import { MdCall } from "react-icons/md";
 import { BsFillChatDotsFill } from "react-icons/bs";
-import {HiChatBubbleBottomCenter} from 'react-icons/hi2'
+import { HiChatBubbleBottomCenter } from "react-icons/hi2";
+import { MdOutlineEmail } from "react-icons/md";
 const Contact = () => {
   return (
     <div id="contact-us" className="c-wrapper">
@@ -26,10 +27,15 @@ const Contact = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="secondaryText">+91 820 874 2491</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Call now</div>
+                <div
+                  onClick={() => window.open("tel:+91 820 874 2491")}
+                  className="flexCenter button"
+                >
+                  Call now
+                </div>
               </div>
 
               <div className="flexColCenter mode">
@@ -39,10 +45,15 @@ const Contact = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Chat</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="secondaryText">+91 820 874 2491</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Chat now</div>
+                <div
+                  onClick={() => window.open(`https://wa.me/+91 820 874 2491`)}
+                  className="flexCenter button"
+                >
+                  Chat now
+                </div>
               </div>
             </div>
 
@@ -51,14 +62,27 @@ const Contact = () => {
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
+                    <MdOutlineEmail size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Video Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="primaryText">Email</span>
+                    <span className="secondaryText">clarofiy857@gmail.com</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Video Call now</div>
+                <div
+                  onClick={() => {
+                    const email = "clarofiy857@gmail.com"; // Replace with the actual email address
+                    const subject = "Enquiry regarding PG";
+                    const body = "Hi, I would like to get in touch with you.";
+                    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(
+                      subject
+                    )}&body=${encodeURIComponent(body)}`;
+                    window.location.href = mailtoUrl;
+                  }}
+                  className="flexCenter button"
+                >
+                  Send Email
+                </div>
               </div>
 
               <div className="flexColCenter mode">
@@ -68,10 +92,10 @@ const Contact = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Message</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="secondaryText">+91 820 874 2491</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Message now</div>
+                <div onClick={() => window.open(`sms:+91 820 874 2491`)} className="flexCenter button">Message now</div>
               </div>
             </div>
           </div>

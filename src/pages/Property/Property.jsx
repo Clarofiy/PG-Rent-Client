@@ -70,9 +70,9 @@ const Property = () => {
     <div className="wrapper">
       <div className="flexColStart paddings innerWidth property-container">
         {/* like button */}
-        <div className="like">
+        {/* <div className="like">
           <Heart id={id} />
-        </div>
+        </div> */}
 
         {/* image */}
         <img src={data?.image} alt="home image" />
@@ -124,7 +124,7 @@ const Property = () => {
               </span>
             </div>
 
-            {/* booking button */}
+            {/* booking button
             {bookings?.map((booking) => booking.id).includes(id) ? (
               <>
                 <Button
@@ -150,7 +150,7 @@ const Property = () => {
               >
                 Book your visit
               </button>
-            )}
+            )} */}
 
             <BookingModal
               opened={modalOpened}
@@ -161,13 +161,13 @@ const Property = () => {
           </div>
 
           {/* right side */}
-          <div className="map">
+          {/* <div className="map">
             <Map
               address={data?.address}
               city={data?.city}
               country={data?.country}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
