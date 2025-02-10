@@ -4,6 +4,7 @@ import { MdCall } from "react-icons/md";
 import { BsFillChatDotsFill } from "react-icons/bs";
 import { HiChatBubbleBottomCenter } from "react-icons/hi2";
 import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlineWhatsapp } from "react-icons/md";
 const Contact = () => {
   return (
     <div id="contact-us" className="c-wrapper">
@@ -41,7 +42,7 @@ const Contact = () => {
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
+                    <MdOutlineWhatsapp size={25} />
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Chat</span>
